@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shot in the Dark</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="home-header">
+    <h1 class="game-title">Shot in the Dark</h1>
+    <p class="game-subtitle">How close can you get?</p>
+  </header>
+
+  <main class="home-main">
+
+    <!-- Players section -->
+    <section class="section">
+      <h2 class="section-heading">Players</h2>
+      <p class="section-hint">Add 2–5 players</p>
+      <div id="player-list"></div>
+      <button id="add-player-btn" type="button">+ Add Player</button>
+    </section>
+
+    <!-- Category section -->
+    <section class="section">
+      <h2 class="section-heading">Category</h2>
+      <p class="section-hint">Choose one to play</p>
+      <div id="category-grid">
+        <button class="category-card" data-category="history" type="button">
+          <span class="cat-name">History</span>
+          <span class="cat-desc">UK and world historical dates and numbers</span>
+        </button>
+        <button class="category-card" data-category="science" type="button">
+          <span class="cat-name">Science &amp; Nature</span>
+          <span class="cat-desc">Scientific facts, measurements, quantities</span>
+        </button>
+        <button class="category-card" data-category="sport" type="button">
+          <span class="cat-name">Sport</span>
+          <span class="cat-desc">Football, cricket, rugby, tennis, F1</span>
+        </button>
+        <button class="category-card" data-category="music" type="button">
+          <span class="cat-name">Music &amp; Entertainment</span>
+          <span class="cat-desc">Chart positions, years, sales figures</span>
+        </button>
+        <button class="category-card" data-category="food" type="button">
+          <span class="cat-name">Food &amp; Drink</span>
+          <span class="cat-desc">Quantities, years, UK-focused</span>
+        </button>
+        <button class="category-card" data-category="geography" type="button">
+          <span class="cat-name">Geography</span>
+          <span class="cat-desc">Distances, populations, heights, areas</span>
+        </button>
+        <button class="category-card" data-category="tv-film" type="button">
+          <span class="cat-name">TV &amp; Film</span>
+          <span class="cat-desc">Viewing figures, release years, runtimes, budgets</span>
+        </button>
+        <button class="category-card" data-category="mixed" type="button">
+          <span class="cat-name">Shot in the Dark</span>
+          <span class="cat-desc">Classic mixed deck — spread across all topics</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="home-footer">
+    <button id="start-btn" type="button" disabled>Start Game</button>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

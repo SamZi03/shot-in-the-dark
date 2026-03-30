@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shot in the Dark</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header id="game-topbar" class="game-header">
+    <span id="category-badge" class="category-badge"></span>
+    <button id="end-btn" type="button" class="end-btn">End Game</button>
+  </header>
+
+  <main id="game-screen" class="game-main">
+
+    <!-- Question area -->
+    <section class="question-section">
+      <p id="question-counter" class="question-counter">Question 1</p>
+      <p id="question-text" class="question-text"></p>
+    </section>
+
+    <!-- Reveal -->
+    <div class="reveal-area">
+      <button id="reveal-btn" type="button" class="reveal-btn">Reveal Answer</button>
+      <div id="answer-display" class="answer-display hidden">
+        <span class="answer-label">Answer:</span>
+        <span id="answer-value" class="answer-value"></span>
+      </div>
+    </div>
+
+    <!-- Player score cards -->
+    <section class="scores-section">
+      <h2 class="scores-heading">Scores</h2>
+      <div id="player-scores"></div>
+    </section>
+
+    <!-- Next question -->
+    <div class="next-area">
+      <button id="next-btn" type="button" class="next-btn hidden">Next Question</button>
+    </div>
+
+  </main>
+
+  <!-- End Game modal / end screen -->
+  <div id="end-screen" class="end-screen hidden" role="dialog" aria-modal="true" aria-labelledby="end-title">
+    <div class="end-screen-inner">
+      <h2 id="end-title" class="end-title">Final Scores</h2>
+      <ol id="final-scores" class="final-scores"></ol>
+      <div class="end-actions">
+        <button id="play-again-btn" type="button" class="play-again-btn">Play Again</button>
+        <button id="home-btn" type="button" class="home-btn">Home</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
