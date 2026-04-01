@@ -1,4 +1,4 @@
-const CACHE = 'sitd-v1';
+const CACHE = 'sitd-v2';
 
 const FILES = [
   './',
